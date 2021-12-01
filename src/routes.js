@@ -7,8 +7,8 @@ import Cart from './pages/Cart';
 export default function Rotas() {
  return (
    <Routes>
-      <Route path="/" exact component={Home} />
-      <Route path="/cart" exact component={Cart} />
+      <Route path="/" element={<Home/>} />
+      <Route path="/cart" element={<Cart/>} />
    </Routes>
  );
 }
