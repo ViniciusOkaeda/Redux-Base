@@ -27,9 +27,13 @@
    }
     
    .book-container > span {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     margin: 8px 0;
+   }
+
+   .risco {
+    text-decoration: line-through;
    }
     
    .book-container button {

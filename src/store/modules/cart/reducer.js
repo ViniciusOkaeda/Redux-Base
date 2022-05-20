@@ -30,10 +30,10 @@ const cart = createReducer([], {
    const { payload } = action;
    const { id } = payload;
  
-   const bookExists = state.find(book => book.id === id);
+   const productExists = state.find(product => product.id === id);
   
-   if (bookExists) {
-     bookExists.amount = bookExists.amount + 1;
+   if (productExists) {
+     productExists.amount = productExists.amount + 1;
    } else {
      payload.amount = 1;
      state.push(payload);
@@ -42,7 +42,7 @@ const cart = createReducer([], {
 // ---------------- Fim análise -----------------------
 
  [removeFromCart]: (state, action) => {
-   const productIndex = state.findIndex(book => book.id === action.payload);
+   const productIndex = state.findIndex(product => product.id === action.payload);
  
    if (productIndex >= 0) {
      state.splice(productIndex, 1);
@@ -51,14 +51,14 @@ const cart = createReducer([], {
 
  [updateAmount]: (state, action) => {
    const { id, amount } = action.payload;
-   const bookExists = state.find(book => book.id === id);
+   const productExists = state.find(product => product.id === id);
  
-   if (bookExists) {
+   if (productExists) {
      console.log(action.payload)
-     const bookIndex = state.findIndex(book => book.id === bookExists.id);
+     const productIndex = state.findIndex(product => product.id === productExists.id);
  
-     if (bookIndex >= 0 && amount >= 0) {
-       state[bookIndex].amount = Number(amount);
+     if (productIndex >= 0 && amount >= 0) {
+       state[productIndex].amount = Number(amount);
      }
    }
  

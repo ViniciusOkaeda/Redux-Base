@@ -26,43 +26,43 @@
     background: #33BFCB;
    }
     
-   .book-table {
+   .product-table {
     width: 100%;
    }
     
-   .book-table thead th {
+   .product-table thead th {
     color: #878C99;
     text-align: left;
     padding: 12px;
    }
     
-   .book-table tbody td {
+   .product-table tbody td {
     padding: 12px;
     border-bottom: 1px solid #eee;
    }
     
-   .book-table img {
+   .product-table img {
     height: 100px;
    }
     
-   .book-table strong {
+   .product-table strong {
     color: #333;
     display: block;
    }
     
-   .book-table span {
+   .product-table span {
     display: block;
     margin-top: 5px;
     font-size: 18px;
     font-weight: bold;
    }
     
-   .book-table div {
+   .product-table div {
     display: flex;
     align-items: center;
    }
     
-   .book-table div input {
+   .product-table div input {
     border: 1px solid #ddd;
     border-radius: 4px;
     color: #878C99;
@@ -70,7 +70,7 @@
     width: 50px;
    }
     
-   .book-table button {
+   .product-table button {
     background: none;
     border: 0;
     padding: 6px;
@@ -89,4 +89,17 @@
    .total strong {
     font-size: 28px;
     margin-left: 5px;
+   }
+
+   .frete {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-weight: bold;
+       margin: auto;
+   }
+
+   .freteColor {
+       color: greenyellow;
+       padding-left: 10px;
    }
